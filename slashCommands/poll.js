@@ -29,7 +29,7 @@ const run = async(client, interaction) => {
 
     if(question === "") return interaction.reply("Invalid question!")
 
-    let questionMsg = `📊 POLL : ${question}`;
+    let questionMsg = `📊 ${question}`;
     let answerMsg = "";
 
     if(choice_a != null) {
@@ -100,7 +100,7 @@ const run = async(client, interaction) => {
         .setColor("PURPLE")
 
     try {
-        const message = await interaction.reply(`${bold("POLL")}`)
+        // const message = await interaction.reply(`${bold("POLL")}`)
         
         interaction.channel.send({ embeds: [exampleEmbed] })
             .then(embedMessage => {
