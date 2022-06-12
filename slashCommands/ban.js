@@ -34,5 +34,6 @@ module.exports = {
             type: "STRING",
             required: false
         }
-    ]
+    ],
+    run,
 }

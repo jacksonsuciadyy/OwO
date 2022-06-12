@@ -36,6 +36,20 @@ console.log("Finished Loading Slash Commands!")
 client.loadButtons(bot, false)
 console.log("Finished Loading Buttons!")
 
+client.on("interactionCreate", (interaction) => {
+    if(!interaction.isCommand()) return
+
+    const slashCmd = client.slashCommands.get(interaction.commandName)
+
+    if(!slashCmd) return interaction.reply("Invalid Slash Sommand!")
+
+    if(slashCmd.perm && !interaction.member.permissions.has(slashCommands.perm))
+
+    console.log("here")
+
+    slashCmd.run(client, interaction)
+})
+
 
 module.exports = bot
 
