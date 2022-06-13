@@ -21,7 +21,6 @@ const run = async(client, interaction) => {
     } catch (err) {
         if(err) {
             console.error(err)
-            return interaction.reason(`Failed to timeout ${member.user.tag}`)
         }
     }
 }

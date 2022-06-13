@@ -12,7 +12,6 @@ const run = async(client, interaction) => {
     } catch (err) {
         if(err) {
             console.error(err)
-            return interaction.reason(`Failed to ban ${member.user.tag}`)
         }
     }
 }

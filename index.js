@@ -43,7 +43,7 @@ client.on("interactionCreate", (interaction) => {
 
     if(!slashCmd) return interaction.reply("Invalid Slash Sommand!")
 
-    if(slashCmd.perm && !interaction.member.permissions.has(slashCommands.perm))
+    if(slashCmd.perm && !interaction.member.permissions.has(slashCmd.perm))
 
     console.log("here")
 
