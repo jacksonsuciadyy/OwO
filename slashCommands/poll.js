@@ -101,7 +101,7 @@ const run = async(client, interaction) => {
     try {
         // const message = await interaction.reply(`${bold("POLL")}`)
         
-        const message = await interaction.reply({ embeds: [exampleEmbed] })
+        const message = await interaction.reply({ embeds: [exampleEmbed], fetchReply: true })
         if(choice_a != null) {
             message.react("🇦")
         }
