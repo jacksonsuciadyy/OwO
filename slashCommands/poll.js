@@ -1,4 +1,3 @@
-const { bold, italic, strikethrough, underscore, spoiler, quote, blockQuote } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
 
 const run = async(client, interaction) => {
