@@ -43,7 +43,8 @@ client.on("interactionCreate", (interaction) => {
 
     if(!slashCmd) return interaction.reply("Invalid Slash Sommand!")
 
-    if(slashCmd.perm && !interaction.member.permissions.has(slashCmd.perm))
+    if(slashCmd.perm && !interaction.member.permissions.has(slashCmd.perm)) 
+        return interaction.reply({content : `You do not have permission to '${interaction.commandName}'!`})
 
     console.log("here")
 
