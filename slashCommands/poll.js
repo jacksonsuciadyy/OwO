@@ -26,7 +26,7 @@ const run = async(client, interaction) => {
     let choice_r = interaction.options.getString("choice_r")
     console.log("Finished declare question & choices") 
 
-    if(question != null) return interaction.reply("Invalid question!")
+    if(question == null) return interaction.reply("Invalid question!")
 
     let questionMsg = `📊 ${question}`;
     let answerMsg = "";
