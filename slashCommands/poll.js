@@ -101,63 +101,61 @@ const run = async(client, interaction) => {
     try {
         // const message = await interaction.reply(`${bold("POLL")}`)
         
-        interaction.reply({ embeds: [exampleEmbed] })
-            .then(embedMessage => {
-            if(choice_a != null) {
-                embedMessage.react("🇦")
-            }
-            if(choice_b != null) {
-                embedMessage.react("🇧")
-            }
-            if(choice_c != null) {
-                embedMessage.react("🇨")
-            }
-            if(choice_d != null) {
-                embedMessage.react("🇩")
-            }
-            if(choice_e != null) {
-                embedMessage.react("🇪")
-            }
-            if(choice_f != null) {
-                embedMessage.react("🇫")
-            }
-            if(choice_g != null) {
-                embedMessage.react("🇬")
-            }
-            if(choice_h != null) {
-                embedMessage.react("🇭")
-            }
-            if(choice_i != null) {
-                embedMessage.react("🇮")
-            }
-            if(choice_j != null) {
-                embedMessage.react("🇯")
-            }
-            if(choice_k != null) {
-                embedMessage.react("🇰")
-            }
-            if(choice_l != null) {
-                embedMessage.react("🇱")
-            }
-            if(choice_m != null) {
-                embedMessage.react("🇲")
-            }
-            if(choice_n != null) {
-                embedMessage.react("🇳")
-            }
-            if(choice_o != null) {
-                embedMessage.react("🇴")
-            }
-            if(choice_p != null) {
-                embedMessage.react("🇵")
-            }
-            if(choice_q != null) {
-                embedMessage.react("🇶")
-            }
-            if(choice_r != null) {
-                embedMessage.react("🇷")
-            }
-            });
+        const message = awaitinteraction.reply({ embeds: [exampleEmbed] })
+        if(choice_a != null) {
+            message.react("🇦")
+        }
+        if(choice_b != null) {
+            message.react("🇧")
+        }
+        if(choice_c != null) {
+            message.react("🇨")
+        }
+        if(choice_d != null) {
+            message.react("🇩")
+        }
+        if(choice_e != null) {
+            message.react("🇪")
+        }
+        if(choice_f != null) {
+            message.react("🇫")
+        }
+        if(choice_g != null) {
+            message.react("🇬")
+        }
+        if(choice_h != null) {
+            message.react("🇭")
+        }
+        if(choice_i != null) {
+            message.react("🇮")
+        }
+        if(choice_j != null) {
+            message.react("🇯")
+        }
+        if(choice_k != null) {
+            message.react("🇰")
+        }
+        if(choice_l != null) {
+            message.react("🇱")
+        }
+        if(choice_m != null) {
+            message.react("🇲")
+        }
+        if(choice_n != null) {
+            message.react("🇳")
+        }
+        if(choice_o != null) {
+            message.react("🇴")
+        }
+        if(choice_p != null) {
+            message.react("🇵")
+        }
+        if(choice_q != null) {
+            message.react("🇶")
+        }
+        if(choice_r != null) {
+            message.react("🇷")
+        }
     } catch (err) {
         if(err) {
             console.error(err)
