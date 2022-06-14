@@ -3,7 +3,7 @@ const { generateImage } = require('../generateImage')
 
 module.exports = {
     name: "welcomeMsg",
-    run: async (bot, member, guildID, channelID) => {
+    run: async (bot, member, guildID) => {
             const {client} = bot
             // const user = client.users.cache.get(member.user.id);
             const guildName = client.guilds.cache.get(guildID).name
