@@ -20,7 +20,7 @@ module.exports = {
 
             const img = await generateImage(member)
             member.guild.channels.cache.find(i => i.name.toLowerCase() === 'welcome').send({
-                content: `Hey <@${member.id}>, welcome to *${guildName}*!`,
+                content: `Hey <@${member.id}>, welcome to **${guildName}**!`,
                 files: [img]
             })
     }
