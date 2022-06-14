@@ -14,6 +14,8 @@ module.exports = {
             const role = member.guild.roles.cache.find(i => i.name.toLowerCase() === 'member')
             member.roles.add(role)
 
+            console.log(generateImage)
+
             const img = await generateImage(member)
             guild.channels.cache.find(i => i.name.toLowerCase() === 'welcome').send({
                 content: `Hey <@${member.id}>, welcome to the *${guildName}*!`,
