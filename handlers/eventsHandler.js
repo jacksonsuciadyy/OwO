@@ -50,6 +50,6 @@ function initEvents(bot) {
     })
 
     client.on("guildMemberAdd", (member) => {
-        triggerEventHandler(bot, "welcomeMsg", member, message.guild.id, message.channel.id)
+        triggerEventHandler(bot, "welcomeMsg", member, member.guild.id, member.channel.id)
     })
 }
