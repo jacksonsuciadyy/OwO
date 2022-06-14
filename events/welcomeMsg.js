@@ -1,7 +1,7 @@
 const { MessageEmbed } = require('discord.js')
 const Canvas = require("canvas")
 const Discord = require("discord.js")
-const background = "https://cdn.discordapp.com/attachments/986226840731537408/986303882508517426/unknown.png"
+const background = "https://cdn.discordapp.com/attachments/986226840731537408/986305011992645643/ffxiv_05192022_004143_905.png"
 
 module.exports = {
     name: "welcomeMsg",
@@ -73,8 +73,8 @@ const generateImage = async (member) => {
     // ctx.font = "50px Roboto"
     // ctx.fillText("Welcome", dim.width/2, dim.margin + 70)
 
-    // draw in the username
-    ctx.font = "60px Roboto"
+    // draw in the welcomeMessage
+    ctx.font = "50px Roboto"
     ctx.fillText(welcomeMessage + discrim, dim.width/2, dim.height - dim.margin - 125)
 
     // draw in to the server
