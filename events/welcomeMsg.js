@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-const { generateImage } = require('../generateImage')
+const { generateImage } = require('../generateImage.js')
 
 module.exports = {
     name: "welcomeMsg",
