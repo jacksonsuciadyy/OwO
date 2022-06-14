@@ -74,8 +74,8 @@ const generateImage = async (member) => {
     // ctx.fillText("Welcome", dim.width/2, dim.margin + 70)
 
     // draw in the username
-    ctx.font = "30px Roboto"
-    ctx.fillText(welcomeMessage + discrim, dim.width/2, dim.height - dim.margin - 125)
+    ctx.font = "36px Roboto"
+    ctx.fillText(welcomeMessage, dim.width/2, dim.height - dim.margin - 125)
 
     // draw in to the server
     // ctx.font = "40px Roboto"
